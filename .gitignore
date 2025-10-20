@@ -1,0 +1,62 @@
+# === SO (basura de sistema) ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === IntelliJ IDEA ===
+.idea/
+*.iml
+out/
+
+# === VS Code (por si lo usas) ===
+.vscode/
+
+# === Maven / Gradle ===
+target/
+build/
+.gradle/
+!gradle/wrapper/**        # conserva el wrapper de Gradle
+#mvn wrapper: NO ignorar .mvn (se versiona)
+# .mvn/  <-- no lo ignores; el wrapper va al repo
+
+# === Logs y reports ===
+logs/
+*.log
+*.log.*
+hs_err_pid*.log
+replay_pid*.log
+*.hprof
+# Tests
+surefire-reports/
+failsafe-reports/
+jacoco.exec
+jacoco-report/
+
+# === Dependencias locales / caches ===
+.node_modules/            # por si mezclas Node (front)
+node_modules/
+
+# === Archivos sensibles / config locales ===
+.env
+.env.*
+*.key
+*.pem
+*.crt
+*.p12
+*.jks
+*.keystore
+
+# Spring Boot: conserva configs base, ignora variantes locales
+# (ajusta a tu convención)
+application-*.local.properties
+application-*.local.yml
+application-local.properties
+application-local.yml
+
+# === Otros IDEs (por si abres el proyecto en otro) ===
+.project
+.classpath
+.settings/
+.factorypath
+.apt_generated/
+
